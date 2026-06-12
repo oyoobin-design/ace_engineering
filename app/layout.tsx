@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ACE Engineering — 해외영업 AI 비서",
+  title: "ACE Engineering Dashboard",
   description: "ESS 해외영업 파이프라인·시장 인텔리전스 대시보드",
 };
 
