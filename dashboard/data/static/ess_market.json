@@ -1,0 +1,46 @@
+{
+  "note": "출처: IRENA 2024, BloombergNEF H1 2024, IEA BESS Report 2024 (공개 보고서 기반 정리)",
+  "global_capacity_gwh": [
+    {"year": 2018, "gwh": 11.4},
+    {"year": 2019, "gwh": 17.2},
+    {"year": 2020, "gwh": 26.3},
+    {"year": 2021, "gwh": 45.1},
+    {"year": 2022, "gwh": 80.8},
+    {"year": 2023, "gwh": 156.0},
+    {"year": 2024, "gwh": 280.0},
+    {"year": 2025, "gwh": 450.0, "forecast": true},
+    {"year": 2026, "gwh": 640.0, "forecast": true},
+    {"year": 2027, "gwh": 870.0, "forecast": true},
+    {"year": 2028, "gwh": 1100.0, "forecast": true},
+    {"year": 2029, "gwh": 1350.0, "forecast": true},
+    {"year": 2030, "gwh": 1600.0, "forecast": true}
+  ],
+  "by_region_2024": [
+    {"region": "중국", "share_pct": 40, "gwh": 112.0, "key_driver": "CATL·BYD 주도, RE 정책"},
+    {"region": "미국", "share_pct": 30, "gwh": 84.0, "key_driver": "IRA 투자세액공제 30%"},
+    {"region": "유럽", "share_pct": 15, "gwh": 42.0, "key_driver": "EU 2030 45% 재생에너지 목표"},
+    {"region": "호주", "share_pct": 5, "gwh": 14.0, "key_driver": "계통 안정화 수요"},
+    {"region": "기타", "share_pct": 10, "gwh": 28.0, "key_driver": "중동·동남아 성장"}
+  ],
+  "data_center_market": {
+    "note": "출처: Synergy Research 2024, DatacenterHawk Q4 2024",
+    "global_mw_by_year": [
+      {"year": 2020, "mw": 340000},
+      {"year": 2021, "mw": 400000},
+      {"year": 2022, "mw": 460000},
+      {"year": 2023, "mw": 520000},
+      {"year": 2024, "mw": 610000},
+      {"year": 2025, "mw": 720000, "forecast": true},
+      {"year": 2030, "mw": 1200000, "forecast": true}
+    ],
+    "ai_driven_growth_note": "2023~2025년 AI 학습 클러스터 수요로 평균 성장률 +18%→+25%로 가속",
+    "bess_per_dc_note": "100MW DC당 ESS 20~40MWh 필요 (UPS 백업 + 피크 저감)"
+  },
+  "ace_addressable_market": {
+    "note": "에이스엔지니어링 관점의 TAM (인클로저 제조 기준, 내부 추정 아님)",
+    "ess_enclosure_market_2024_usd_bn": 8.5,
+    "dc_enclosure_market_2024_usd_bn": 3.2,
+    "ace_market_share_est_pct": 3.5,
+    "comment": "30,000+ 유닛 납품 기준 추정"
+  }
+}

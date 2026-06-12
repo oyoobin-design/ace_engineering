@@ -1,0 +1,87 @@
+{
+  "events": [
+    {
+      "date": "2022-08-16",
+      "country": "미국",
+      "policy": "IRA (인플레이션 감축법) 서명",
+      "impact": "독립형 ESS에 투자세액공제 30% 최초 적용. 배터리 스토리지 시장 전환점.",
+      "impact_score": 10,
+      "color": "#0052cc"
+    },
+    {
+      "date": "2022-06-01",
+      "country": "EU",
+      "policy": "REPowerEU 발표",
+      "impact": "2030년 재생에너지 비중 45% 목표 (기존 32% → 45%↑). ESS 수요 간접 확대.",
+      "impact_score": 8,
+      "color": "#003087"
+    },
+    {
+      "date": "2023-01-01",
+      "country": "미국",
+      "policy": "IRA 국내 생산 보너스 시행",
+      "impact": "미국산 부품 사용 시 +10%p 추가 공제 (최대 40%). 한국 제조사에 기회/위협 동시 존재.",
+      "impact_score": 7,
+      "color": "#0052cc"
+    },
+    {
+      "date": "2023-03-16",
+      "country": "EU",
+      "policy": "넷제로 산업법 (NZIA) 제안",
+      "impact": "BESS 포함 전략 기술 제조 역량 EU 내 40% 확보 목표. 유럽 현지화 압력 증가.",
+      "impact_score": 6,
+      "color": "#003087"
+    },
+    {
+      "date": "2023-08-16",
+      "country": "미국",
+      "policy": "IRA 재무부 가이던스 — 기술중립 ITC",
+      "impact": "2025년부터 기술중립 ITC로 전환. 장기 지원 체계 확정으로 투자 예측 가능성 확보.",
+      "impact_score": 7,
+      "color": "#0052cc"
+    },
+    {
+      "date": "2024-02-18",
+      "country": "EU",
+      "policy": "배터리 규정 전면 시행",
+      "impact": "탄소발자국 신고, 재활용 비율, Passport 의무화 시작. 공급망 투명성 요구 강화.",
+      "impact_score": 5,
+      "color": "#003087"
+    },
+    {
+      "date": "2024-06-01",
+      "country": "미국",
+      "policy": "IRA 섹션 45X — 첨단 제조 세액공제",
+      "impact": "배터리 셀·모듈 미국 내 생산 시 $35/kWh 크레딧. Fluence 등 SI 업체 미국 현지화 가속.",
+      "impact_score": 8,
+      "color": "#0052cc"
+    },
+    {
+      "date": "2025-01-20",
+      "country": "미국",
+      "policy": "트럼프 행정부 IRA 재검토 검토",
+      "impact": "IRA 수정 가능성 불확실성 증가. 단기 발주 집중 현상 예상 (2025년 실적 호조 가능).",
+      "impact_score": 9,
+      "color": "#cc0000",
+      "risk": true
+    },
+    {
+      "date": "2025-04-02",
+      "country": "글로벌",
+      "policy": "미국 상호관세 발표 (Liberation Day)",
+      "impact": "한국산 25% 관세. 에이스 베트남 공장 중요성 증가. 원가 경쟁력 재산정 필요.",
+      "impact_score": 8,
+      "color": "#cc0000",
+      "risk": true
+    },
+    {
+      "date": "2030-01-01",
+      "country": "EU",
+      "policy": "EU 2030 목표 달성 시점",
+      "impact": "재생에너지 45% + 탄소중립 산업 기반. 유럽 ESS 시장 정점 예상.",
+      "impact_score": 10,
+      "color": "#003087",
+      "forecast": true
+    }
+  ]
+}

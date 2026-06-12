@@ -1,0 +1,58 @@
+{
+  "annual": [
+    {
+      "year": 2022,
+      "revenue": 235384,
+      "assets": 112695,
+      "liabilities": 79158,
+      "employees": 73,
+      "note": "DART 실제값 (단위: 백만원)"
+    },
+    {
+      "year": 2023,
+      "revenue": 295939,
+      "assets": 192980,
+      "liabilities": 121500,
+      "employees": 98,
+      "note": "DART 실제값"
+    },
+    {
+      "year": 2024,
+      "revenue": 634035,
+      "assets": 353201,
+      "liabilities": 227774,
+      "employees": 111,
+      "note": "DART 실제값"
+    },
+    {
+      "year": 2025,
+      "revenue": 307911,
+      "assets": 312679,
+      "liabilities": 229520,
+      "employees": 125,
+      "note": "DART 실제값 (상반기 기준 추정)"
+    }
+  ],
+  "quarterly_sim": {
+    "note": "내부 데이터 없음 — 공개 매출 기반 시뮬레이션. 실제 입사 후 교체 예정",
+    "2024": {
+      "Q1": 120000,
+      "Q2": 165000,
+      "Q3": 185000,
+      "Q4": 164035
+    },
+    "2023": {
+      "Q1": 58000,
+      "Q2": 72000,
+      "Q3": 85000,
+      "Q4": 80939
+    }
+  },
+  "kpi_targets_2025": {
+    "revenue_target": 700000,
+    "note": "목표치 시뮬레이션 — 실제 입사 후 갱신",
+    "new_customer_ratio_target": 0.25,
+    "us_revenue_ratio_target": 0.55,
+    "eu_revenue_ratio_target": 0.30
+  }
+}

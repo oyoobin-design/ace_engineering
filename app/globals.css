@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── ACE Engineering 디자인 토큰 ─────────────────────────────── */
+:root {
+  --ace-navy:    #1A1A1A;
+  --ace-blue:    #C8272D;
+  --ace-sky:     #1E7A3C;
+  --ace-light:   #FDEAEA;
+  --ace-gray:    #F5F5F5;
+  --ace-border:  #E0E0E0;
+  --ace-text:    #1A1A1A;
+  --ace-muted:   #6B7280;
+  --ace-red:     #C8272D;
+  --ace-green:   #1E7A3C;
+  --ace-amber:   #D97706;
+}
+
+/* ── 기본 ───────────────────────────────────────────────────── */
+body {
+  background-color: var(--ace-gray);
+  color: var(--ace-text);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', 'Noto Sans KR', sans-serif;
+}
+
+/* ── 헤더 ──────────────────────────────────────────────────── */
+.ace-header {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 60%, #1A1A1A 100%);
+  border-bottom: 3px solid var(--ace-red);
+}
+
+/* ── ACE 3-색 stripe (로고 바 미러링) ─────────────────────── */
+.ace-stripe {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.ace-stripe span:nth-child(1) { flex: 1; display: block; background: #C8272D; }
+.ace-stripe span:nth-child(2) { flex: 1; display: block; background: #1E7A3C; }
+.ace-stripe span:nth-child(3) { flex: 1; display: block; background: #1A1A1A; }
+
+/* ── 섹션 태그 (Barlow uppercase 라벨 — "— LABEL" 패턴) ──── */
+.section-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ace-red);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: 'Barlow', 'Noto Sans KR', sans-serif;
+}
+.section-tag::before { content: '— '; }
+
+/* ── 섹션 제목 (Oswald uppercase) ─────────────────────────── */
+.section-title {
+  font-family: 'Oswald', 'Noto Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ace-navy);
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+/* ── 카드 (흰 배경) ─────────────────────────────────────────── */
+.ace-card {
+  background: white;
+  border: 1px solid var(--ace-border);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* ── 다크 카드 (포트폴리오 서비스 카드 스타일) ─────────────── */
+.ace-card-dark {
+  background: #111111;
+  border: 1px solid #2D2D2D;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── 배경 그리드 패턴 (다크 섹션용) ─────────────────────────── */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ── 탭 버튼 (포트폴리오 nav link 스타일) ─────────────────── */
+.tab-btn {
+  font-family: 'Barlow', 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border-radius: 4px;
+  color: #6B7280;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.tab-btn:hover {
+  color: var(--ace-navy);
+  background: rgba(0, 0, 0, 0.04);
+}
+.tab-btn.active {
+  background: rgba(200, 39, 45, 0.08);
+  color: var(--ace-red);
+  border-color: rgba(200, 39, 45, 0.2);
+  font-weight: 700;
+}
+
+/* ── 메트릭 ─────────────────────────────────────────────────── */
+.metric-value {
+  font-family: 'Oswald', 'Noto Sans KR', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--ace-navy);
+  line-height: 1.2;
+}
+.metric-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ace-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: 'Barlow', 'Noto Sans KR', sans-serif;
+}
+
+/* ── 데이터 출처 배지 ────────────────────────────────────────── */
+.source-badge {
+  @apply inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full border;
+}
+.source-official      { @apply bg-blue-50  text-blue-700  border-blue-200; }
+.source-reconstructed { @apply bg-amber-50 text-amber-700 border-amber-200; }
+.source-forecast      { @apply bg-gray-50  text-gray-600  border-gray-300; }
+
+/* ── 섹션 구분선 ─────────────────────────────────────────────── */
+.section-divider {
+  border-left: 4px solid var(--ace-red);
+  padding-left: 0.75rem;
+}
+
+/* ── 섹션 번호 ─────────────────────────────────────────────── */
+.section-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--ace-light);
+  line-height: 1;
+  user-select: none;
+}
+
+/* ── 스크롤바 ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--ace-gray); }
+::-webkit-scrollbar-thumb { background: var(--ace-border); border-radius: 3px; }
